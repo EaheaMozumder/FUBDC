@@ -268,7 +268,7 @@ section .title::after{
 
 /* about section start */
 .about .title::after{
-    content: "আমাদের পরিচিতি";
+    content:"আমাদের পরিচিতি";
 }
 .about .about-content .left{
     width: 45%;
