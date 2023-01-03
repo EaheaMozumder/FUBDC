@@ -35,12 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .events, .testimonial, .gallery .contact, .footer{
+.about, .services, .teams, .testimonial, .gallery .contact, .footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.events .events-content,
+.teams .carousel,
 .contact .contact-content,
 .testimonial .testimonial-pic .testimonial-text
 {
@@ -170,13 +170,13 @@ section .title::after{
     background-color: crimson;
     position: relative;
     overflow: hidden;	
-    min-width: 200px;
+    min-width: 225px;
     
   }						
   
   .submenu > li > a {
     padding: 10px;		
-    text-align: left;	
+    text-align: center;	
     margin: 0;
   }
   
@@ -260,7 +260,7 @@ section .title::after{
 
 /* about section start */
 .about .title::after{
-    content:"আমাদের পরিচিতি";
+    content:"আমাদের পরিচয়";
 }
 .about .about-content .left{
     width: 45%;
@@ -285,6 +285,7 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
+
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
@@ -301,6 +302,7 @@ section .title::after{
     color: crimson;
     background: none;
 }
+
 /* about section end */
 
 /* services section start */
@@ -361,7 +363,7 @@ section .title::after{
     background-origin: padding-box;
     text-align: center;
     padding: 30px 30px 30px;
-    margin: 50px 50px 180px ;
+    margin: 0px 0px 180px ;
     position: relative;
   }
   
@@ -376,7 +378,7 @@ section .title::after{
   .testimonial-item .description {
     font-size: 18px;
     color: #fff;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 30px;
     opacity: 0.9;
   }
@@ -417,7 +419,7 @@ section .title::after{
 
 /* teams section start */
 .teams .title::after{
-    content: "কার্যকরী সদস্যবৃন্দ";
+    content: "স্বেছাসেবকবৃন্দ";
 }
 .teams .carousel .card{
     background: #222;
@@ -778,40 +780,6 @@ section .title::after{
   }
 /* contact section end */
 
-/* sponsor or partner start */
-.sponsor .title::after{
-    content: "সহযোগী প্রতিষ্ঠান ";}
-.sponsor_wrapper {
-	width: 100%;
-	overflow: hidden;
-}
-.sponsor_photobanner {
-	position: relative;
-	height: 233px;
-	margin-bottom: 30px;
-	display: flex;
-	width: 100%;
-}
-
-.sponsor_photobanner img {
-  margin: 5px 25px;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
-
-.sponsor_photobanner {
-  animation: bannermove 50s linear infinite alternate-reverse;
-}
-
-@keyframes bannermove {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -2700px;
-  }
-}
-/* sponsor or partner end */
-
 /* footer section start*/
 footer{
     background: #111;
@@ -822,6 +790,7 @@ footer{
 }
 footer span a{
     color: crimson;
+    font-size:large;
     text-decoration: none;
 }
 footer span a:hover{
